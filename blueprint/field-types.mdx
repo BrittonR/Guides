@@ -23,7 +23,7 @@ Defines a property that should be stored and read as a basic string.
   "type": "string"
 },
 ```
-![string](https://github.com/FlatFilers/Guides/assets/19697744/cb931050-1ce7-438f-8591-3467f523bee3)
+![string](https://github.com/FlatFilers/Guides/assets/19697744/b61f2c72-bb1e-40eb-bb82-408e957b5528)
 
 
 ### `number`
@@ -46,14 +46,16 @@ Defines a property that should be stored and read as either an integer or floati
   }
 },
 ```
-![number](https://github.com/FlatFilers/Guides/assets/19697744/dbaabdc8-6abe-4ddd-9a86-ed1de25792f0)
 
+![number](https://github.com/FlatFilers/Guides/assets/19697744/d00b668f-e3dd-4522-928b-5367c6f5c127)
 
 
 
 ### `enum`
 
 Defines an enumerated list of options for the user to select from. Matching tooling attempts to resolve incoming data assigment to a valid option. The maximum number of options for this list is `100`. For larger lists, users should use the `reference` lookup types.
+
+![enum](https://github.com/FlatFilers/Guides/assets/19697744/543dde97-0215-419f-8760-20e02eabfd75)
 
 
 <ParamField path="config.allow_custom" default="false" type="boolean">
@@ -111,7 +113,6 @@ Defines an enumerated list of options for the user to select from. Matching tool
   }
 },
 ```
-![enum](https://github.com/FlatFilers/Guides/assets/19697744/647557d5-5624-407c-9944-98dfa1b20d1f)
 
 
 ### `reference`
@@ -124,8 +125,8 @@ Defines a reference to another sheet. Links should be established automatically 
 <ParamField path="config.relationship" required>
   The type of relationship this defines. Can be `has-one`
 </ParamField>
+![reference](https://github.com/FlatFilers/Guides/assets/19697744/85729b70-2452-4b01-8980-1b686859af80)
 
-![reference](https://github.com/FlatFilers/Guides/assets/19697744/9235c223-a42a-4d40-9558-ac22ba93e2fa)
 
 
 ### `boolean`
@@ -139,7 +140,7 @@ A `true` or `false` value type. Matching engines should attempt to resolve all c
   "type": "boolean"
 }
 ```
-![boolean](https://github.com/FlatFilers/Guides/assets/19697744/c232e4be-6dfc-4859-9fcd-7a813da3629c)
+![boolean](https://github.com/FlatFilers/Guides/assets/19697744/5f487da3-5ca2-4606-bdec-f5751d729ecc)
 
 
 ### `date`
@@ -150,7 +151,7 @@ Store a field as a GMT date.
 
 Datetime should be a separate and future supported value as it must consider timezone.
 
-![date](https://github.com/FlatFilers/Guides/assets/19697744/041658f6-31a3-41ea-ad8e-91075fb02b75)
+![date](https://github.com/FlatFilers/Guides/assets/19697744/a594d9ec-10f5-4d06-9d6a-22662ba9928b)
 
 
 ---
