@@ -51,21 +51,6 @@
   ],
   "anchors": [
     {
-      "name": "Blueprint",
-      "icon": "compass-drafting",
-      "url": "blueprint"
-    },
-    {
-      "name": "Plugins",
-      "icon": "plug",
-      "url": "plugins"
-    },
-    {
-      "name": "Developers",
-      "icon": "brackets-curly",
-      "url": "developer-tools"
-    },
-    {
       "name": "API Reference",
       "icon": "rectangle-terminal",
       "url": "https://reference.flatfile.com/docs/api/"
@@ -74,10 +59,10 @@
   "navigation": [
     {
       "group": "Documentation",
-      "pages": ["overview"]
+      "pages": ["overview", "starter-projects"]
     },
     {
-      "group": "Quickstart",
+      "group": "Beginner Tutorial",
       "pages": [
         "quickstart/meet-the-workbook",
         "quickstart/add-data-transformation",
@@ -111,15 +96,15 @@
     },
     {
       "group": "Use cases",
+
       "pages": [
         {
           "group": "Embed in your app",
           "icon": "person-to-portal",
           "pages": [
-            "use-cases/embedding",
-            "use-cases/part2",
-            "use-cases/part3",
-            "use-cases/part4"
+            "use-cases/embedding/overview",
+            "use-cases/embedding/javascript/guide",
+            "use-cases/embedding/react/guide"
           ]
         },
         "use-cases/headless",
@@ -160,6 +145,7 @@
       "group": "Security",
       "pages": [
         "developer-tools/security/authentication",
+        "developer-tools/security/account-token",
         "developer-tools/security/roles-and-permissions"
       ]
     },
@@ -189,14 +175,16 @@
       "group": "Extractors",
       "pages": [
         "plugins/extractors/xlsx-extractor",
+        "plugins/extractors/json-extractor",
+        "plugins/extractors/xml-extractor",
+        "plugins/extractors/zip-extractor",
         "plugins/extractors/psv-extractor",
-        "plugins/extractors/pdf-extractor",
         {
           "group": "More in development",
           "icon": "clock",
           "pages": [
             "plugins/extractors/doc-extractor",
-            "plugins/extractors/zip-extractor"
+            "plugins/extractors/pdf-extractor"
           ]
         }
       ]
@@ -208,6 +196,10 @@
     {
       "group": "Automation",
       "pages": ["plugins/automations/automap"]
+    },
+    {
+      "group": "Export",
+      "pages": ["plugins/export/workbook"]
     },
     {
       "group": "Schemas",
@@ -251,5 +243,26 @@
   },
   "integrations": {
     "intercom": "q8ccrv3f"
-  }
+  },
+  "search": {
+    "prompt": "Ask any question (ChatGPT powered)"
+  },
+  "tabs": [
+    {
+      "name": "Guides",
+      "url": "guides"
+    },
+    {
+      "name": "Blueprint",
+      "url": "blueprint"
+    },
+    {
+      "name": "Plugins",
+      "url": "plugins"
+    },
+    {
+      "name": "Developers",
+      "url": "developer-tools"
+    }
+  ]
 }

@@ -4,7 +4,7 @@ description: Publish your new configuration to Flatfile and move beyond this sim
 icon: "circle-4"
 ---
 
-<Snippet file="dxpbanner.mdx" />
+<Snippet file="shared/dxpbanner.mdx" />
 
 For a production deployment, listeners can be hosted either in your cloud or directly on the Flatfile platform. Learn more about [deploying](../developer-tools/deploying).
 
@@ -28,7 +28,7 @@ git clone https://github.com/FlatFilers/getting-started.git
   </Card>
 </CardGroup>
 
-2. Run the deploy command from the root directory
+2. Update your .env file and run the deploy command from the root directory
 
 <Note>
   {" "}
@@ -37,7 +37,7 @@ git clone https://github.com/FlatFilers/getting-started.git
 </Note>
 
 ```terminal
-npx flatfile@latest deploy
+npx flatfile@latest deploy typescript/index.ts
 ```
 
 ---

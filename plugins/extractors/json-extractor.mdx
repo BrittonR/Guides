@@ -1,0 +1,47 @@
+---
+title: "@flatfile/plugin-json-extractor"
+description: "A plugin for parsing .json files in Flatfile."
+icon: "download"
+---
+
+<CardGroup cols={1}>
+    <Card title="@flatfile/plugin-json-extractor" href="https://github.com/FlatFilers/flatfile-plugins/tree/main/plugins/json-extractor" icon="github" >
+    *currently v0.1.0*
+    <br/>
+    **Contributors**<br/>
+    Carl Brugger<br/>
+    <br/>
+    **Last updated**<br/>
+    July 25, 2023
+    </Card>
+</CardGroup>
+
+
+
+### Overview
+
+This plugin parses a JSON file and extracts first-level nested objects as Sheets in Flatfile.
+
+See a working example in our [flatfile-docs-kitchen-sink](https://github.com/FlatFilers/flatfile-docs-kitchen-sink/blob/main/typescript/extractors/index.ts) Github repo.
+
+```SSH Install
+npm i @flatfile/plugin-json-extractor
+```
+
+
+---
+
+## Import
+
+```js
+import { jsonExtractorPlugin } from '@flatfile/plugin-json-extractor'
+```
+
+## Usage
+
+Listen for a JSON file to be uploaded to Flatfile. The platform will then extract the file automatically. Once complete, the file will be ready for import in the Files area.
+
+```js
+listener.use(jsonExtractorPlugin())
+```
+
