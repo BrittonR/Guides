@@ -60,11 +60,13 @@ Generate email from first and last name:
 ```js javascript
 listener.use(
   recordHook('contacts', (record) => {
-    record.compute(
-      'email',
-      (email, record) => `${record.get('firstName')}${record.get('lastName')}@gmail.com`,
-      'Email was generated from first and last name.'
-    );
+    if (record.get('firstName') && record.get('lastName')) {
+      record.compute(
+        'email',
+        (email, record) => `${record.get('firstName')}${record.get('lastName')}@gmail.com`,
+        'Email was generated from first and last name.'
+      );
+    }
     return record;
   })
 );
